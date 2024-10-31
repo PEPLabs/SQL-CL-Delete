@@ -87,7 +87,7 @@ public class DeleteRecordsTest {
     public void afterEach(){
         try {
             Connection connection = ConnectionUtil.getConnection();
-            String sql = "DROP TABLE user;";
+            String sql = "DROP TABLE site_user;";
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.executeUpdate();
         } catch (SQLException e) {
